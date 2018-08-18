@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    card_view:cardElevation="@dimen/margin_medium">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House Keeping"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_heading_1x"
+            android:layout_margin="@dimen/margin_medium"
+            />
+
+        <TextView
+            android:id="@+id/tvSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$2000"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_3x"
+            android:layout_margin="@dimen/margin_medium"
+
+            android:layout_below="@+id/tvTitle"
+            />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintains a clean, sanitary, and safte health care environment by daily cleaning and supplying of patient rooms, nursing stations, lounges, lavatori"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/text_regular"
+            android:layout_below="@+id/tvSalary"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:maxLines="3"
+            android:lineSpacingMultiplier="1.3"
+            android:layout_margin="@dimen/margin_medium"
+            />
+
+        <TextView
+            android:id="@+id/tvWorkingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300 hours"
+            android:drawableLeft="@drawable/ic_access_time_grey_24dp"
+            android:drawablePadding="@dimen/margin_small"
+            android:layout_below="@id/tvDescription"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pazundaung"
+            android:drawableLeft="@drawable/ic_location_on_grey_24dp"
+            android:drawablePadding="@dimen/margin_small"
+            android:layout_below="@id/tvDescription"
+            android:layout_alignTop="@+id/tvWorkingTime"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            />
+
+        <TextView
+            android:id="@+id/tvPersonApplied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 persons applied"
+            android:textColor="@color/primary_dark"
+            android:drawablePadding="@dimen/margin_small"
+            android:layout_below="@id/tvDescription"
+            android:layout_alignTop="@+id/tvWorkingTime"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium_2"
+            />
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLocation"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:background="@color/primary"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLocation"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="Save"
+            android:background="@color/grey"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

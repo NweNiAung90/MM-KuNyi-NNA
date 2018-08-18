@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium_2">
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:background="@drawable/map"/>
+            <TextView
+                android:id="@+id/tvJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:text="Job Title :"
+                android:textColor="@color/primary_text"
+                android:layout_below="@id/iv_map"
+                android:textSize="@dimen/text_regular_2x" />
+
+
+            <TextView
+                android:id="@+id/tvLocationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJobTitle"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:text="Location :"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvPaymentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLocationTitle"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:text="Payment :"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvPeriodTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPaymentTitle"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:text="Period     :"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvVacancyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:text="Vacancy :"
+                android:layout_below="@id/tvPeriodTitle"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvJObTitleVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_toRightOf="@+id/tvJobTitle"
+                android:text="House Keeping"
+                android:layout_below="@id/iv_map"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvLocationVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvJobTitle"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_toRightOf="@+id/tvLocationTitle"
+                android:text="Pazundaung"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <TextView
+                android:id="@+id/tvPaymentVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="20000"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_below="@id/tvLocationTitle"
+                android:layout_toRightOf="@id/tvPaymentTitle"/>
+
+            <TextView
+                android:id="@+id/tvPeriodVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="300 hours"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_below="@id/tvPaymentTitle"
+                android:layout_toRightOf="@+id/tvPeriodTitle"/>
+
+            <TextView
+                android:id="@+id/tvVacancyVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="3 posts available"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text_regular_2x"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:layout_below="@+id/tvPeriodTitle"
+                android:layout_toRightOf="@+id/tvVacancyTitle"/>
+
+            <TextView
+                android:id="@+id/tv_job_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Description"
+                android:layout_below="@id/tvVacancyVal"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <TextView
+                android:id="@+id/tvFullDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_job_description"
+                android:text="Daily office cleaning duties (Toilet, carpet, pantry). Maintains a clean, sanitary and safe health care environment by daily cleaning and supplying of patient rooms, nursing stations, lounges."
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_regular" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+    <Button
+        android:id="@+id/btn_apply_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium_2"
+        android:background="@color/primary"
+        android:text="Apply Job"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/text_regular_3x" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
